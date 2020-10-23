@@ -4,14 +4,13 @@ import "./App.css";
 
 import "./components/menu/MenuLateral";
 import MenuLateral from "./components/menu/MenuLateral";
-import header from "./components/header/header";
+import BarraCima from "./components/header/BarraCima";
 import Menucadastrocliente from "./components/menu/Menucadastrocliente";
 
 function App() {
   return (
-    <div>
-      <header></header>
-
+    <div >
+      <BarraCima></BarraCima>
       <MenuLateral></MenuLateral>
     </div>
   );

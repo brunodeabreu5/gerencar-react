@@ -5,24 +5,24 @@ function MenuLateral() {
   return (
     <aside>
       <ul>
-        <nav id="menuLateral">
+        <nav className="menuLateral">
           <a href="">
-            <div class="link">Clientes</div>
+            <div className="link">Clientes</div>
           </a>
           <a href="">
-            <div class="link">Serviços</div>
+            <div className="link">Serviços</div>
           </a>
           <a href="">
-            <div class="link">Veículos</div>
+            <div className="link">Veículos</div>
           </a>
           <a href="">
-            <div class="link">Produtos</div>
+            <div className="link">Produtos</div>
           </a>
           <a href="">
-            <div class="link">Relatório</div>
+            <div className="link">Relatório</div>
           </a>
           <a href="">
-            <div class="link">Estoque</div>
+            <div className="link">Estoque</div>
           </a>
         </nav>
       </ul>
