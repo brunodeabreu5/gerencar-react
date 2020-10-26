@@ -8,25 +8,32 @@
   display: flex;
   background-color: rgb(16, 29, 66);
   height: 85px;
+ 
+  
 }
 header h2 {
   color: #fff;
+  display: flex;
   margin: 0 auto;
   font-family: "Anton", sans-serif;
   font-size: 50px;
-  line-height: 70px;
+  line-height: 85px;
+ 
 }
 /*fim da barra de cima*/
 /*Menu lateral*/
 .menuLateral {
   padding: 0px;
-  background-color: #cccc33;
+  width: 15%;
   transition: all 0.2s linear;
-  
-  
+  display: flex;
+  flex-direction: column;
 }
 
+
 .link {
+  display: flex;
+  justify-content: center;
   padding: 28px;
   font-family: "arial";
   font-size: 20pt;
@@ -44,10 +51,5 @@ a {
   text-decoration: none;
 }
 
-.header-index {
-  display: flex;
-  background-color: rgb(16, 29, 66);
-  height: 70px;
-  width: 100%;
-}
+
 /*fim do menu lateral*/
