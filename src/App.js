@@ -6,7 +6,7 @@ import "./components/menu/MenuLateral";
 import MenuLateral from "./components/menu/MenuLateral";
 import BarraCima from "./components/header/BarraCima";
 import Menucadastrocliente from "./components/menu/Menucadastrocliente";
-import Status from "./components/Notificação/Status";
+import Status from "./components/Notificacao/Status";
 
 function App() {
   return (

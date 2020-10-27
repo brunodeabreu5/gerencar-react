@@ -8,8 +8,6 @@
   display: flex;
   background-color: rgb(16, 29, 66);
   height: 85px;
- 
-  
 }
 header h2 {
   color: #fff;
@@ -18,23 +16,25 @@ header h2 {
   font-family: "Anton", sans-serif;
   font-size: 50px;
   line-height: 85px;
- 
+}
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
 }
 /*fim da barra de cima*/
 /*Menu lateral*/
 .menuLateral {
- 
-  
+  background-color: rgb(16, 29, 66);
+  width: 250px;
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
 }
 
-
 .link {
   display: flex;
   justify-content: center;
-  padding: 28px;
+  padding: 34px;
   font-family: "arial";
   font-size: 20pt;
   transition: all 0.2s linear;
@@ -51,12 +51,12 @@ a {
   text-decoration: none;
 }
 
-
 /*fim do menu lateral*/
 .item {
   margin: 7px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  font-weight: bolder
 }
 
 section {
@@ -65,11 +65,156 @@ section {
   flex-flow: column nowrap;
 }
 
-.Noti{
+.Noti {
   display: flex;
 }
 section {
   display: flex;
   margin: 0 auto;
   flex-flow: column nowrap;
+}
+
+/*notificação*/
+.item-noti{
+  
+    height: 500px;
+    width: 1100px;
+    margin: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 3px solid #222;
+    
+}
+
+.item-status {
+  overflow-x: auto;
+  height: 420px;
+  width: 1000px;
+}
+.statusservicos {
+  height: 40px;
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+
+.servicosid {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosStatus {
+  width: 14%;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosfuncionario {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosPlaca {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosEntrada {
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
+
+/*notificação do veiculo-- na pagina notifica*/
+.statusveiculos {
+  height: 90px;
+  font-size: 15pt;
+  display: flex;
+  border-top: 2px solid rgba(122, 121, 122, 0.4);
+  align-items: center;
+}
+
+.statusid {
+  width: 10%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.statusStatus {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #2982b6;
+  border-radius: 10px;
+}
+
+.statusStatuspronto {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #14bb1d;
+  border-radius: 10px;
+}
+
+.statusStatuspeca {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #e0dd2c;
+  border-radius: 10px;
+}
+
+.statusStatusstrasado {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #d41919;
+  border-radius: 10px;
+}
+
+.statusfuncionario {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusPlaca {
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.statusEntrada {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
