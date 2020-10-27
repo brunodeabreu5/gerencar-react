@@ -23,8 +23,8 @@ header h2 {
 /*fim da barra de cima*/
 /*Menu lateral*/
 .menuLateral {
-  padding: 0px;
-  width: 15%;
+ 
+  
   transition: all 0.2s linear;
   display: flex;
   flex-direction: column;
@@ -53,3 +53,23 @@ a {
 
 
 /*fim do menu lateral*/
+.item {
+  margin: 7px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column nowrap;
+}
+
+.Noti{
+  display: flex;
+}
+section {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column nowrap;
+}
