@@ -8,15 +8,13 @@ import Status from "./components/Notificacao/Status/index";
 
 function App() {
   return (
-    <div >
-
+    <>
       <BarraCima></BarraCima>
       <div className="Noti">
         <MenuLateral></MenuLateral>
         <Status></Status>
-
       </div>
-    </div>
+    </>
   );
 }
 
