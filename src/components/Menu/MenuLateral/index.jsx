@@ -1,5 +1,7 @@
 import React from "react";
-import "../css/style.css";
+import "../../../styles/style.css";
+import "./index.css";
+
 
 function MenuLateral() {
   return (

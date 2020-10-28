@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.Noti {
+  display: flex;
+}
+
+/*notificação do veiculo-- na pagina notifica*/
+.statusveiculos {
+  height: 90px;
+  font-size: 15pt;
+  display: flex;
+  border-top: 2px solid rgba(122, 121, 122, 0.4);
+  align-items: center;
+}
+
+.statusid {
+  width: 10%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.statusStatus {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #2982b6;
+  border-radius: 10px;
+}
+
+.statusStatuspronto {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #14bb1d;
+  border-radius: 10px;
+}
+
+.statusStatuspeca {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #e0dd2c;
+  border-radius: 10px;
+}
+
+.statusStatusstrasado {
+  width: 14%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #d41919;
+  border-radius: 10px;
+}
+
+.statusfuncionario {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusPlaca {
+  width: 20%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.statusEntrada {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

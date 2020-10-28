@@ -1,14 +1,14 @@
 import React from "react";
-import "../css/style.css";
+import "../../../styles/style.css";
+import "./index.css";
 
-import Notifica from "./Notifica"
+import Notifica from "../Notifica/index";
 
 function Status() {
   return (
     <section>
       <div className="item">Serviços em andamentos</div>
       <Notifica></Notifica>
-    
     </section>
   );
 }

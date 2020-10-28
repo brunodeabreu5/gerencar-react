@@ -1,0 +1,30 @@
+/*Menu lateral*/
+.menuLateral {
+  background-color: rgb(16, 29, 66);
+  width: 250px;
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 34px;
+  font-family: "arial";
+  font-size: 20pt;
+  transition: all 0.2s linear;
+  color: #434343;
+  border-bottom: 1px solid #fff;
+  background-color: rgb(137, 210, 220);
+}
+
+.link:hover {
+  background-color: #cccc33;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*fim do menu lateral*/

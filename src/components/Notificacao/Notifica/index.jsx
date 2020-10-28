@@ -1,6 +1,9 @@
 import React from "react";
-import "../css/style.css";
-import ItemStatus from"./ItemStatus";
+import "../../../styles/style.css";
+import "./index.css";
+import ItemStatus from "../ItemStatus";
+
+
 function Notifica() {
   return (
     <div className="item-noti">
@@ -12,7 +15,6 @@ function Notifica() {
         <div className="servicosEntrada">Entrada</div>
       </div>
       <ItemStatus></ItemStatus>
-     
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.header-index {
+  display: flex;
+  background-color: rgb(16, 29, 66);
+  height: 85px;
+}
+header h2 {
+  color: #fff;
+  display: flex;
+  margin: 0 auto;
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  line-height: 85px;
+}
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+}

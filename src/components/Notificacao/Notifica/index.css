@@ -1,0 +1,60 @@
+/*notificação*/
+.item-noti{
+  
+    height: 500px;
+    width: 1100px;
+    margin: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 3px solid #222;
+    
+}
+
+.item-status {
+  overflow-x: auto;
+  height: 420px;
+  
+}
+.statusservicos {
+  height: 40px;
+  font-size: 15pt;
+  display: flex;
+  align-items: center;
+}
+
+.servicosid {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosStatus {
+  width: 14%;
+  font-size: 15pt;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosfuncionario {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosPlaca {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.servicosEntrada {
+  width: 20%;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+}
