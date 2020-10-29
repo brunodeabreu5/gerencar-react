@@ -1,7 +1,7 @@
 /*notificação*/
 .item-noti{
   
-    
+    height: 500px;
     width: 1100px;
     margin: 5px;
     font-size: 1.5em;
@@ -11,11 +11,7 @@
     
 }
 
-.item-status {
-  overflow-x: auto;
-  height: 420px;
-  
-}
+
 .statusservicos {
   height: 40px;
   font-size: 15pt;

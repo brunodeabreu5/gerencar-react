@@ -1,15 +1,11 @@
 import React from "react";
 import "./index.css";
+import iconseditar from "../../../Assets/icons/iconseditar.png";
 
 function EditarStatus() {
   return (
    <>
-      <a className="meuBtn1"></a>
-      <div className="meubt1" class="bt1">
-        <div className="bt1-content"></div>
-      </div>
-      <a className="meuBtn2"></a>
-      <div id="meubt2" className="bt2"></div>
+      <a className="meuBtn1"><img src={iconseditar} alt="Editar"/></a>
     </>
   );
 }

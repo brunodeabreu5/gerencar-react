@@ -9,6 +9,11 @@
     background-color: #d41919;
     display: flex;
 }
+img{
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
 
 .meuBtn1:hover {
     background-color: #cf1a1a11;

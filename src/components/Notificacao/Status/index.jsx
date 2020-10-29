@@ -8,6 +8,7 @@ function Status() {
   return (
     <section>
       <div className="item">Serviços em andamentos</div>
+
       <Notifica></Notifica>
     </section>
   );
