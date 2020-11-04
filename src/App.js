@@ -9,10 +9,10 @@ import Status from "./components/Notificacao/Status/index";
 function App() {
   return (
     <>
-      <BarraCima></BarraCima>
+      <BarraCima/>
       <div className="Noti">
-        <MenuLateral></MenuLateral>
-        <Status></Status>
+        <MenuLateral/>
+        <Status texto="Serviços em andamentos"/>
       </div>
     </>
   );

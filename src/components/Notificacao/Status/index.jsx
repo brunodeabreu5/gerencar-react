@@ -4,11 +4,10 @@ import "./index.css";
 
 import Notifica from "../Notifica/index";
 
-function Status() {
+function Status(props) {
   return (
     <section>
-      <div className="item">Serviços em andamentos</div>
-
+      <div className="item">{props.texto}</div>
       <Notifica></Notifica>
     </section>
   );
