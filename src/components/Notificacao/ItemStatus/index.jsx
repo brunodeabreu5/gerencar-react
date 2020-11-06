@@ -7,11 +7,12 @@ import InfoVeiculo from "../../Button/StatusInformacao/index";
 
 function ItemStatus() {
   return (
+
     <div className="item-status">
-      <div className="statusveiculos">
-        <div className="statusid">2</div>
+      <div className="statusVeiculos">
+        <div className="statusId">2</div>
         <div className="statusStatus">
-          Em <br></br>Andamento
+          Em <br></br>aguardo
         </div>
         <div className="statusfuncionario">Rodrigo</div>
         <div className="statusPlaca">MNL-8385</div>
