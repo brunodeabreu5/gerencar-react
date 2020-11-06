@@ -2,7 +2,8 @@ import React from "react";
 import "./index.css";
 import "../../../styles/style.css";
 
-import EditarStatus from "../../Botton/EditarStatus/index";
+import EditarStatus from "../../Button/EditarStatus/index";
+import InfoVeiculo from "../../Button/StatusInformacao/index";
 
 function ItemStatus() {
   return (
@@ -16,17 +17,19 @@ function ItemStatus() {
         <div className="statusPlaca">MNL-8385</div>
         <div className="statusEntrada">14/09/2020</div>
         <div className="botaoeditarstaus">
-          <EditarStatus></EditarStatus>
+          <InfoVeiculo/>
+          <EditarStatus/>
         </div>
       </div>
       <div className="statusveiculos">
-        <div class="statusid">5</div>
-        <div class="statusStatuspronto">Pronto</div>
-        <div class="statusfuncionario">Geraldo</div>
-        <div class="statusPlaca">JYY-3665</div>
-        <div class="statusEntrada">20/09/2020</div>
+        <div className="statusid">5</div>
+        <div className="statusStatuspronto">Pronto</div>
+        <div className="statusfuncionario">Geraldo</div>
+        <div className="statusPlaca">JYY-3665</div>
+        <div className="statusEntrada">20/09/2020</div>
         <div className="botaoeditarstaus">
-          <EditarStatus></EditarStatus>
+          <InfoVeiculo/>
+          <EditarStatus/>
         </div>
       </div>
       <div className="statusveiculos">
@@ -38,7 +41,8 @@ function ItemStatus() {
         <div className="statusPlaca">DDT-6434</div>
         <div className="statusEntrada">11/09/2020</div>
         <div className="botaoeditarstaus">
-          <EditarStatus></EditarStatus>
+          <InfoVeiculo/>
+          <EditarStatus/>
         </div>
       </div>
       <div className="statusveiculos">
@@ -47,6 +51,10 @@ function ItemStatus() {
         <div class="statusfuncionario">Vinicius</div>
         <div class="statusPlaca">KOJ-1058</div>
         <div class="statusEntrada">01/09/2020</div>
+        <div className="botaoeditarstaus">
+          <InfoVeiculo/>
+          <EditarStatus/>
+        </div>
       </div>
       <div className="statusveiculos">
         <div class="statusid">4</div>
@@ -56,6 +64,10 @@ function ItemStatus() {
         <div class="statusfuncionario">Rodrigo</div>
         <div class="statusPlaca">GLP-8790</div>
         <div class="statusEntrada">01/09/2020</div>
+        <div className="botaoeditarstaus">
+          <InfoVeiculo/>
+          <EditarStatus/>
+        </div>
       </div>
       <div className="statusveiculos">
         <div class="statusid">11</div>
@@ -63,6 +75,10 @@ function ItemStatus() {
         <div class="statusfuncionario">Rodrigo</div>
         <div class="statusPlaca">NEW-4842</div>
         <div class="statusEntrada">06/09/2020</div>
+        <div className="botaoeditarstaus">
+          <InfoVeiculo/>
+          <EditarStatus/>
+        </div>
       </div>
       <div class="statusveiculos">
         <div class="statusid">15</div>
@@ -72,6 +88,10 @@ function ItemStatus() {
         <div class="statusfuncionario"></div>
         <div class="statusPlaca">GLH-0724</div>
         <div class="statusEntrada">12/10/2020</div>
+        <div className="botaoeditarstaus">
+          <InfoVeiculo/>
+          <EditarStatus/>
+        </div>
       </div>
     </div>
   );

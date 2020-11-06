@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+/*import logo from "./logo.svg";*/
 import "./App.css";
 
 import MenuLateral from "./components/Menu/MenuLateral/index";
@@ -9,13 +9,12 @@ import Status from "./components/Notificacao/Status/index";
 function App() {
   return (
     <>
-      <BarraCima/>
+      <BarraCima />
       <div className="Noti">
-        <MenuLateral/>
-        <Status texto="Serviços em andamentos"/>
+        <MenuLateral />
+        <Status texto="Serviços em andamentos" />
       </div>
     </>
   );
 }
-
 export default App;

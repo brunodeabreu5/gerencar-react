@@ -15,7 +15,7 @@ function Notifica() {
         <div className="servicosEntrada">Entrada</div>
       </div>
       <div className="item-status">
-      <ItemStatus></ItemStatus>
+      <ItemStatus/>
       </div>
     </div>
   );
