@@ -12,7 +12,7 @@ function ItemStatus() {
       <div className="statusveiculos">
         <div className="statusid">2</div>
         <div className="statusStatus">
-          Em <br></br>Andamento
+          Em <br></br>aguardo
         </div>
         <div className="statusfuncionario">Rodrigo</div>
         <div className="statusPlaca">MNL-8385</div>
