@@ -7,6 +7,7 @@ import InfoVeiculo from "../../Button/StatusInformacao/index";
 
 function ItemStatus() {
   return (
+
     <div className="item-status">
       <div className="statusveiculos">
         <div className="statusid">2</div>
