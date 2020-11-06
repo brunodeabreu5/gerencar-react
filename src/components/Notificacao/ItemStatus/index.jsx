@@ -9,8 +9,8 @@ function ItemStatus() {
   return (
 
     <div className="item-status">
-      <div className="statusveiculos">
-        <div className="statusid">2</div>
+      <div className="statusVeiculos">
+        <div className="statusId">2</div>
         <div className="statusStatus">
           Em <br></br>aguardo
         </div>
