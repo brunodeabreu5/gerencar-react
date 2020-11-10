@@ -1,5 +1,6 @@
 import React from "react";
 
+//componentes
 import MenuLateral from "../../components/Menu/MenuLateral/index";
 import BarraCima from "../../components/Header/BarraCima/index";
 import Status from "../../components/Notificacao/Status/index";
