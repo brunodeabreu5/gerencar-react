@@ -9,14 +9,12 @@ function ItemStatus() {
   return (
 
     <div className="item-status">
-      <div className="statusVeiculos">
-        <div className="statusId">2</div>
-        <div className="statusStatus">
-          Em <br></br>aguardo
-        </div>
-        <div className="statusfuncionario">Rodrigo</div>
-        <div className="statusPlaca">MNL-8385</div>
-        <div className="statusEntrada">14/09/2020</div>
+      <div className="statusveiculos">
+        <div className="statusid">5</div>
+        <div className="statusStatuspronto">Pronto</div>
+        <div className="statusfuncionario">Geraldo</div>
+        <div className="statusPlaca">JYY-3665</div>
+        <div className="statusEntrada">20/09/2020</div>
         <div className="botaoeditarstaus">
           <InfoVeiculo/>
           <EditarStatus/>
