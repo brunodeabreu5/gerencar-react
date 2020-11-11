@@ -9,12 +9,12 @@ function MenuLateral() {
     <aside>
       <ul>
         <nav className="menuLateral">
-          <Link className="link" to="/CadastroClientes">Clientes</Link>
-          <Link className="link" to="/Login">Serviços</Link>
-          <Link className="link" to="/Login">Veículos</Link>
-          <Link className="link" to="/Login">Produtos</Link>
-          <Link className="link" to="/Login">Relatório</Link>
-          <Link className="link" to="/Login">Estoque</Link>
+          <Link className="link" to="/cadastroClientes">Clientes</Link>
+          <Link className="link" to="/login">Serviços</Link>
+          <Link className="link" to="/login">Veículos</Link>
+          <Link className="link" to="/login">Produtos</Link>
+          <Link className="link" to="/login">Relatório</Link>
+          <Link className="link" to="/login">Estoque</Link>
         </nav>
       </ul>
     </aside>

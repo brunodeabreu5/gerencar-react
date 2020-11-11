@@ -1,20 +1,21 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 //Paginas de rotas
-import Main from "./pages/Main/index";
-import Login from "./pages/Login/index";
-import CadastroClientes from "./pages/CadastroClientes/index";
+import main from "./pages/Main/index";
+import login from "./pages/Login/index";
+import cadastroClientes from "./pages/CadastroClientes/index";
 
 function routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Login} />
-        <Route path="/Main" component={Main} />
-        <Route path="/CadastroClientes" component={CadastroClientes} />
-        <Route path="/" component={Login} />
-        <Route path="/" component={Login} />
-        <Route path="/" component={Login} />
+        <Route path="/" exact component={login} />
+        <Route path="/main" component={main} />
+        <Route path="/cadastroClientes" component={cadastroClientes} />
+        <Route path="/" component={login} />
+        <Route path="/" component={login} />
+        <Route path="/" component={login} />
       </Switch>
     </BrowserRouter>
   );

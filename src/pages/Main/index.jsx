@@ -12,6 +12,7 @@ function Main() {
       <div className="Noti">
         <MenuLateral />
         <Status texto="Serviços em andamentos" />
+       
       </div>
     </>
   );

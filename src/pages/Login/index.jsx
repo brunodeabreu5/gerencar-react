@@ -1,10 +1,14 @@
 import React from "react";
 import "../../styles/style.css";
+import "./index.css";
+
 
 function Login() {
   return (
-    <div className="Login">
-      <p>Bruno</p>
+    <div className="fundoLogin">
+      <div className="frame">
+
+      </div>
     </div>
   );
 }
