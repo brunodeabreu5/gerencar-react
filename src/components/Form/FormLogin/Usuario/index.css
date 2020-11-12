@@ -1,0 +1,10 @@
+label[for="fname"] {
+  font-size: 15pt;
+  font-weight: bold;
+}
+.inputlogin {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
