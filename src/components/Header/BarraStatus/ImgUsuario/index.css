@@ -1,0 +1,11 @@
+.imagemUsuario {
+height: 100px;
+  width: 100px;
+  display: flex;
+  color: #fff;
+}
+
+.infoUsuario {
+  height: 100px;
+  width: 100px;
+}

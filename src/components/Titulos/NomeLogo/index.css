@@ -1,0 +1,17 @@
+.logoBranca {
+  height: 90%;
+  width: 27%;
+}
+.logoIndex {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.logoTexto{
+  font-size: 40px;
+  font-family: arial;
+  color:#fff;
+  display: flex;
+  align-items: center;
+}

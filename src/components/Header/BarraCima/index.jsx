@@ -1,11 +1,16 @@
 import React from "react";
+//estilos
 import "../../../styles/style.css";
 import "./index.css";
+//componetes
+import NomeLogo from "../../Titulos/NomeLogo/index";
+import BarraStatus from "../BarraStatus/ImgUsuario/index";
 
 function BarraCima() {
   return (
     <header className="header-index">
-      <h2>GERENCAR</h2>
+      <NomeLogo/>
+      <BarraStatus/>
     </header>
   );
 }
