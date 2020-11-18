@@ -8,7 +8,7 @@ import Logo from "../../../Assets/CARRO-branco.png";
 function NomeLogo() {
   return (
     <div className="logoIndex">
-      <Link className="botaoInicial">
+      <Link to="/main" className="botaoInicial">
         <img className="logoBranca" src={Logo} alt="logo" />
         <h2>Gerencar</h2>
       </Link>

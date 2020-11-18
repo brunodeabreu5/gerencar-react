@@ -17,5 +17,4 @@ function BarraStatus() {
     </di>
   );
 }
-
 export default BarraStatus;

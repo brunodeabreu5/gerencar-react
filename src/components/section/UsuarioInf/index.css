@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.itemform {
+  display: flex;
+
+  flex-direction: row;
+}
+
+.menuPesquisabotao {
+  margin-top: 10px;
+}
+.menuPesquisa {
+  margin-right: 30px;
+  font-size: 15pt;
+}
+.menubusca {
+  display: flex;
+}
+.inputlogin1 {
+  width: 300px;
+  height: 25px;
+}
+
+/* div da janela de resultados */
+
+.item-buscacliente {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 460px;
+  width: 1000px;
+  margin: 1px;
+  background-color: #fff;
+  border: 2px solid #222;
+}
+
+/*acabou "pesquisa do cliente" */
