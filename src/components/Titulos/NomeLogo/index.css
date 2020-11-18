@@ -4,14 +4,14 @@
 }
 .logoIndex {
   width: 250px;
-  display: flex;
-  justify-content: center;
+  padding: 4px;
 }
-
-.logoTexto{
-  font-size: 40px;
-  font-family: arial;
-  color:#fff;
+.botaoInicial {
   display: flex;
+  align-items: stretch;
+  font-size: 25px;
+  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #fff;
 }

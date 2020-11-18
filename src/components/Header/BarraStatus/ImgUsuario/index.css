@@ -1,11 +1,21 @@
 .imagemUsuario {
-height: 100px;
-  width: 100px;
+  display: flex;
+  align-items: center;
   display: flex;
   color: #fff;
 }
-
 .infoUsuario {
   height: 100px;
   width: 100px;
+}
+.textoStatus {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.imagem {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
 }

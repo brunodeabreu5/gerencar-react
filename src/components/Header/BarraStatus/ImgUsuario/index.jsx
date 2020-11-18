@@ -5,13 +5,15 @@ import "./index.css";
 //imagem
 import Usuario from "../../../../Assets/usuario.jpg";
 //componetes
-import InfUsuario from "../InfUsuario/index";
 
 function BarraStatus() {
   return (
     <di className="imagemUsuario">
-      <img src={Usuario} alt="usuario" />
-      <InfUsuario/>
+      <img className="imagem" src={Usuario} alt="usuario" />
+      <div className="textoStatus">
+        <p>Bruno De Abreu</p>
+        <p>Mecanico</p>
+      </div>
     </di>
   );
 }

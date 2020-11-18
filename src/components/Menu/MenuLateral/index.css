@@ -17,14 +17,13 @@
   color: #434343;
   border-bottom: 1px solid #fff;
   background-color: rgb(137, 210, 220);
+  text-decoration: none;
 }
 
 .link:hover {
   background-color: #cccc33;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 /*fim do menu lateral*/
