@@ -4,7 +4,7 @@ import "./index.css";
 function UsuarioInfo() {
   return (
     <div className="container">
-      <form class="itemform">
+      <div class="itemform">
         <di class="menuPesquisa">
           <label class="menubusca">Nome do cliente:</label>
           <input class="inputlogin1" type="text" id="fname1" name="fname" />
@@ -26,9 +26,32 @@ function UsuarioInfo() {
             Pesquisar
           </a>
         </div>
-      </form>
+      </div>
 
-      <div class="item-buscacliente"></div>
+      <div className="item-buscacliente">
+      <div className="statuscliente">
+                        <div className="nomedocliente">Nome
+                            <div className="resultadocliente">Pedro da Silva</div>
+                            <div className="resultadocliente">João gomes</div>
+                        </div>
+                        <div className="cpfcliente">CPF
+                            <div className="resultadocliente">611.276.890-96</div>
+                            <div className="resultadocliente">182.097.840-05</div>
+                        </div>
+                        <div className="datacliente">Data
+                            <div className="resultadocliente">20/04/2020</div>
+                            <div className="resultadocliente">23/06/2020</div>
+                        </div>
+                        <div className="dataTelefone">Telefone
+                            <div className="resultadocliente">(45) 99324-5234</div>
+                            <div className="resultadocliente">(45) 99456-3457</div>
+                        </div>
+                        <div className="dataVeiculos">Veiculos
+                            <div className="resultadocliente">2 veiculos</div>
+                            <div className="resultadocliente">1 veiculos</div>
+                        </div>
+                    </div>
+      </div>
     </div>
   );
 }

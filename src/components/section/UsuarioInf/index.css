@@ -1,18 +1,20 @@
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  margin-left: 7%;
 }
 
 .itemform {
   display: flex;
-
   flex-direction: row;
+  margin-bottom: 15px;
 }
 
 .menuPesquisabotao {
-  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 .menuPesquisa {
   margin-right: 30px;
@@ -30,13 +32,74 @@
 
 .item-buscacliente {
   display: flex;
-  align-items: center;
-  justify-content: center;  
-  height: 460px;
-  width: 1000px;
+  
+  justify-content: center;
+  height: 75%;
+  width: 90%;
   margin: 1px;
   background-color: #fff;
   border: 2px solid #222;
 }
 
-/*acabou "pesquisa do cliente" */
+/*pesquisa do cliente*/
+
+.statuscliente {
+    
+    width: 100%;
+    height: 6%;
+    display: flex;
+    font-size: 25px;
+    
+}
+
+.nomedocliente {
+    
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(143, 136, 136, 0.568);
+}
+
+.cpfcliente {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(143, 136, 136, 0.568);
+}
+
+.datacliente {
+    width: 15%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(143, 136, 136, 0.568);
+}
+
+.dataTelefone {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(143, 136, 136, 0.568);
+}
+
+.dataVeiculos {
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgba(143, 136, 136, 0.568);
+}
+/* div da janela de resultados */
+
+.resultadocliente {
+    margin-top: 2px;
+    padding: 10px;
+    display: flex;
+    font-size: 15pt;
+    font-family: arial;
+    border: 2px solid black;
+}
+
