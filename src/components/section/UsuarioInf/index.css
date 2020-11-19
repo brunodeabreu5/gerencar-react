@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   width: 100%;
   margin-left: 7%;
@@ -16,6 +15,7 @@
   display: flex;
   justify-content: flex-start;
 }
+
 .menuPesquisa {
   margin-right: 30px;
   font-size: 15pt;
@@ -32,7 +32,6 @@
 
 .item-buscacliente {
   display: flex;
-  
   justify-content: center;
   height: 75%;
   width: 90%;
@@ -44,62 +43,72 @@
 /*pesquisa do cliente*/
 
 .statuscliente {
-    
-    width: 100%;
-    height: 6%;
-    display: flex;
-    font-size: 25px;
-    
+  display: flex;
+  font-size: 25px;
+  width: 100%;
 }
 
 .nomedocliente {
-    
-    width: 30%;
-    height: 100%;
-    border: 1px solid black;
-    padding: 4px;
-    background-color: rgba(143, 136, 136, 0.568);
+  flex-direction: column;
+  display: flex;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: rgba(143, 136, 136, 0.568);
 }
 
 .cpfcliente {
-    width: 20%;
-    height: 100%;
-    border: 1px solid black;
-    padding: 4px;
-    background-color: rgba(143, 136, 136, 0.568);
+  border: 1px solid black;
+  padding: 4px;
+  background-color: rgba(143, 136, 136, 0.568);
 }
 
 .datacliente {
-    width: 15%;
-    height: 100%;
-    border: 1px solid black;
-    padding: 4px;
-    background-color: rgba(143, 136, 136, 0.568);
+  width: 15%;
+  border: 1px solid black;
+  padding: 4px;
+  background-color: rgba(143, 136, 136, 0.568);
 }
 
 .dataTelefone {
-    width: 20%;
-    height: 100%;
-    border: 1px solid black;
-    padding: 4px;
-    background-color: rgba(143, 136, 136, 0.568);
+  width: 20%;
+
+  border: 1px solid black;
+  padding: 4px;
+  background-color: rgba(143, 136, 136, 0.568);
 }
 
 .dataVeiculos {
-    width: 20%;
-    height: 100%;
-    border: 1px solid black;
-    padding: 4px;
-    background-color: rgba(143, 136, 136, 0.568);
+  width: 20%;
+
+  border: 1px solid black;
+  padding: 4px;
+  background-color: rgba(143, 136, 136, 0.568);
 }
 /* div da janela de resultados */
 
 .resultadocliente {
-    margin-top: 2px;
-    padding: 10px;
-    display: flex;
-    font-size: 15pt;
-    font-family: arial;
-    border: 2px solid black;
+  margin-top: 2px;
+  padding: 10px;
+  display: flex;
+  font-size: 15pt;
+  font-family: arial;
+  border: 2px solid black;
 }
 
+.stnome {
+  width: 45%;
+}
+
+/* botão de pesquisa da pagina de clientes */
+
+.opcao1 {
+  width: 150px;
+  padding: 6px;
+  border: 1 solid black;
+}
+
+.itemform {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+}

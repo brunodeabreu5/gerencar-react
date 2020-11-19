@@ -5,7 +5,7 @@ import "./index.css";
 function Usuario() {
   return (
     <>
-      <label for="fname">Funcionário:</label><br></br>
+      <label for="fname">Usuário:</label><br></br>
       <input class="inputlogin" type="text" id="fname" name="fname" />
     </>
   );
