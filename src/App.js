@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Abajo from './components/abajo/Abajo';
+import Formulario from "./components/abajo/formulario/Formulario"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+    <header class="cabezera"> <img class="logo" src="logo.png" alt="logo"/></header>
     </div>
+    <section><Abajo/>  <Formulario/></section>
+    </>
   );
 }
 
