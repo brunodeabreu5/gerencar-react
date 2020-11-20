@@ -13,6 +13,7 @@ function BarraStatus() {
       <div className="textoStatus">
         <p>Bruno De Abreu</p>
         <p>Mecanico</p>
+        <button>Sair</button>
       </div>
     </di>
   );
