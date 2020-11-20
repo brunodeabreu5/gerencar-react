@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cabezera{
+  background-color: rgba(255, 0, 0, 0.79);
+  border: 1px solid #eebb55;
+  width: 1363px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.logo {
+  margin: -9px 0px 0 400px;
+}
+
+.fondo {
+  background-color: black;
+}

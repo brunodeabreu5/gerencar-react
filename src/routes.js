@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import main from "./pages/Main/index";
 import login from "./pages/Login/index";
 import cadastroClientes from "./pages/CadastroClientes/index";
+import landingpage from "./pages/Landingpage/index";
 
 function routes() {
   return (
@@ -13,6 +14,8 @@ function routes() {
         <Route path="/" exact component={login} />
         <Route path="/main" component={main} />
         <Route path="/cadastroClientes" component={cadastroClientes} />
+        <Route path="/landingpage" component={landingpage} />
+        <Route path="/" component={login} />
         <Route path="/" component={login} />
         <Route path="/" component={login} />
         <Route path="/" component={login} />
