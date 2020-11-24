@@ -7,8 +7,6 @@ import BarraCima from "../../components/Header/BarraCima/index";
 import MenuLateral from "../../components/Menu/MenuLateral/index";
 import UsuarioInfo from "../../components/section/UsuarioInf/index";
 
-
-
 function CadastroCliente() {
   return (
     <div>
