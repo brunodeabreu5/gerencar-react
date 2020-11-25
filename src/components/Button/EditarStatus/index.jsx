@@ -1,11 +1,27 @@
 import React from "react";
+//biblioteca
+import Popup from "reactjs-popup";
+//estilização
 import "./index.css";
+//imagem
 import iconseditar from "../../../Assets/icons/iconseditar.png";
+//componentes
+import TelaStatus from "../../TelaPopup/TelaStatus";
 
 function EditarStatus() {
   return (
-   <>
-      <a className="meuBtn1"><img src={iconseditar} alt="Editar"/></a>
+    <>
+      <Popup 
+        trigger={
+          <button className="meuBtn1">
+            <img src={iconseditar} alt="Editar" />
+          </button>
+        }
+      >
+        
+        <TelaStatus />
+      
+      </Popup>
     </>
   );
 }
