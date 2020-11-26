@@ -6,9 +6,8 @@ import "./index.css";
 function ButtonLogin() {
   return (
     <div class="centro">
-      <Link class="btn">Login</Link>
+      <Link class="btn1">Login</Link>
     </div>
   );
 }
-
 export default ButtonLogin;

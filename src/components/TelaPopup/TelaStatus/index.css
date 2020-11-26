@@ -1,8 +1,10 @@
-.popup {  
-    
-  }  
-  .popup\_inner {  
-
-  }
-
+.tela {
+  width: 680px;
+  height: 570px;
+  background-color: #fff;
   
+}
+
+.clik{
+  background-color: blue;
+}

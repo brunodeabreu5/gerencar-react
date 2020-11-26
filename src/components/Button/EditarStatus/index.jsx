@@ -11,16 +11,15 @@ import TelaStatus from "../../TelaPopup/TelaStatus";
 function EditarStatus() {
   return (
     <>
-      <Popup 
+      <Popup
         trigger={
           <button className="meuBtn1">
             <img src={iconseditar} alt="Editar" />
           </button>
         }
+        modal
       >
-        
         <TelaStatus />
-      
       </Popup>
     </>
   );
