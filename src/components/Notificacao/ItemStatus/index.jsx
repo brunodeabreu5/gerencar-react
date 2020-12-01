@@ -1,98 +1,30 @@
 import React from "react";
+import { createContext } from "react";
 import "./index.css";
 import "../../../styles/style.css";
+import { servicos } from "../../../servicos.json";
 //componentes
 import EditarStatus from "../../Button/EditarStatus/index";
 import InfoVeiculo from "../../Button/StatusInformacao/index";
-
+import EmAndamento from "../../StatusServicos/EmAndamento";
+import Pronto from "../../StatusServicos/Pronto";
 
 function ItemStatus() {
-  return (
-    <div className="item-status">
+  return servicos.map((servico, key) => {
+    return (
       <div className="statusveiculos">
-        <div className="statusid">5</div>
-        <div className="statusStatuspronto">Pronto</div>
-        <div className="statusfuncionario">Geraldo</div>
-        <div className="statusPlaca">JYY-3665</div>
-        <div className="statusEntrada">20/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
+        <div class="statusid">{servico.id}</div>
+        <div className="{status.cor}">
+
+          
         </div>
+        <div class="statusfuncionario">{servico.nome}</div>
+        <div class="statusPlaca">{servico.placa}</div>
+        <div class="statusEntrada">{servico.entrada}</div>
+        <EditarStatus />
+        <InfoVeiculo />
       </div>
-      <div className="statusveiculos">
-        <div className="statusid">5</div>
-        <div className="statusStatuspronto">Pronto</div>
-        <div className="statusfuncionario">Geraldo</div>
-        <div className="statusPlaca">JYY-3665</div>
-        <div className="statusEntrada">20/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-      <div className="statusveiculos">
-        <div className="statusid">8</div>
-        <div className="statusStatuspeca">
-          Esperando <br></br>peça
-        </div>
-        <div className="statusfuncionario">Rodrigo</div>
-        <div className="statusPlaca">DDT-6434</div>
-        <div className="statusEntrada">11/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-      <div className="statusveiculos">
-        <div class="statusid">10</div>
-        <div class="statusStatusstrasado">Atrasado</div>
-        <div class="statusfuncionario">Vinicius</div>
-        <div class="statusPlaca">KOJ-1058</div>
-        <div class="statusEntrada">01/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-      <div className="statusveiculos">
-        <div class="statusid">4</div>
-        <div class="statusStatus">
-          Em <br></br> Andamento
-        </div>
-        <div class="statusfuncionario">Rodrigo</div>
-        <div class="statusPlaca">GLP-8790</div>
-        <div class="statusEntrada">01/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-      <div className="statusveiculos">
-        <div class="statusid">11</div>
-        <div class="statusStatuspronto">Pronto</div>
-        <div class="statusfuncionario">Rodrigo</div>
-        <div class="statusPlaca">NEW-4842</div>
-        <div class="statusEntrada">06/09/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-      <div class="statusveiculos">
-        <div class="statusid">15</div>
-        <div class="statusStatuspronto">
-          No<br></br>aguardo
-        </div>
-        <div class="statusfuncionario"></div>
-        <div class="statusPlaca">GLH-0724</div>
-        <div class="statusEntrada">12/10/2020</div>
-        <div className="botaoeditarstaus">
-          <InfoVeiculo />
-          <EditarStatus />
-        </div>
-      </div>
-    </div>
-  );
+    );
+  });
 }
 export default ItemStatus;

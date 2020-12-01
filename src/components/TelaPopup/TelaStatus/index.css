@@ -2,9 +2,13 @@
   width: 680px;
   height: 570px;
   background-color: #fff;
-  
+  padding: 20px;
 }
 
 .clik{
   background-color: blue;
+}
+
+.close{
+  padding: 20px;
 }

@@ -5,7 +5,7 @@ import "./index.css";
 function TelaStatus() {
   return (
     <div className="tela">
-      <Button color="danger">Danger!</Button>
+      <Button close />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 /*sub tela do botão edita posição*/
 
 .meuBtn1 {
-  width: 30%;
-  padding: 9px;
+  
+  padding: 7px;
   border-radius: 10px;
   background-color: #d41919;
   display: flex;
@@ -10,7 +10,7 @@
 img {
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  
 }
 
 .meuBtn1:hover {
@@ -19,8 +19,8 @@ img {
 }
 
 .meuBtn2 {
-  width: 20%;
-  padding: 9px;
+  margin-left: 12px;
+  padding: 8px;
   border-radius: 10px;
   background-color: #42bb37;
   display: flex;

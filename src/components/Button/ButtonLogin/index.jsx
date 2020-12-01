@@ -6,7 +6,9 @@ import "./index.css";
 function ButtonLogin() {
   return (
     <div class="centro">
-      <Link class="btn1">Login</Link>
+      <button>
+        <Link>Login</Link>
+      </button>
     </div>
   );
 }
