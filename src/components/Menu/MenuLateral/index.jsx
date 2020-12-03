@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFillAlarmFill } from "react-icons/bs";
 
 import "./index.css";
 
@@ -9,10 +10,12 @@ function MenuLateral() {
    
       <ul>
         <nav className="menuLateral">
-          <Link className="link" to="/cadastroClientes">
+          <Link  className="link" to="/cadastroClientes">
+          <BsFillAlarmFill size="30"/>
             Clientes
           </Link>
-          <Link className="link" to="/login">
+          <Link  className="link" to="/login">
+            
             Serviços
           </Link>
           <Link className="link" to="/login">

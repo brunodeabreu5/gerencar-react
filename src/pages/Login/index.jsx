@@ -17,14 +17,18 @@ const Login = () => {
   }
 
   return (
-    <form className="frame"onSubmit={handleSubmit}>
-      <label htmlFor="username">Usuario: </label>
+    <div className="fundoFrame">
+    <form className="frame" onSubmit={handleSubmit}>
+      <LogoLogin size="10px" />
+      <h1>Gerencar</h1>
+      <div><label htmlFor="username">Usuario: </label>
       <input
         type="text"
         value={username}
         placeholder="enter a username"
         onChange={({ target }) => setUsername(target.value)}
       />
+      </div>
       <div>
         <label htmlFor="password">Senha: </label>
         <input
@@ -36,6 +40,7 @@ const Login = () => {
       </div>
       <button type="submit">Login</button>
     </form>
+    </div>
   );
 };
 

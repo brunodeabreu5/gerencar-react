@@ -4,7 +4,7 @@ import logo from "../../../Assets/CARRO-preto.png";
 
 function logoLogin() {
   return (
-    <div className="logo">
+    <div className="logoLogin">
       <a>
         <img src={logo} alt="Logo do Gerencar" />
       </a>
