@@ -2,7 +2,7 @@
   "servicos": [
     {
       "id": "2",
-      "status": "em andamento",
+      "status": "em_andamento",
       "nome": "rodrigo",
       "placa": "mnl-8385",
       "entrada": "14/09/2020"
@@ -16,7 +16,7 @@
     },
     {
       "id": "8",
-      "status": "esperando peça",
+      "status": "esperando_peca",
       "nome": "rodrigo",
       "placa": "ddt-6434",
       "entrada": "11/09/2020"
@@ -30,7 +30,7 @@
     },
     {
       "id": "4",
-      "status": "em andamento",
+      "status": "em_andamento",
       "nome": "rodrigo",
       "placa": "glp-8790",
       "entrada": "01/09/2020"

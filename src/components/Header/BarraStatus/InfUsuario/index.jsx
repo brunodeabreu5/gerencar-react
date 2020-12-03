@@ -6,8 +6,8 @@ import "./index.css";
 function InfUsuario(){
     return(
         <div>
-            <p>Bruno De Abre</p>
-            <p>Mecanico</p>
+            <div>Bruno De Abre</div>
+            <div>Mecanico</div>
         </div>
     );
 }

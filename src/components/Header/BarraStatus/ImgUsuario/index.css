@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
+
+}
+.textoStatus p {
+  margin-bottom: 0;
 }
 
 .imagem {

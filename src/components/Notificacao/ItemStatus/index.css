@@ -1,6 +1,6 @@
 .item-status {
     overflow: auto ;
-    height: 460px;
+    height: 453px;
     
   }
   .statusservicos {
@@ -46,52 +46,7 @@
     align-self: center;
   }
   
-  /*status de serviços em andamentos*/
-  .statusStatus {
-    width: 14%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background-color: #2982b6;
-    border-radius: 10px;
-}
 
-.statusStatuspronto {
-    width: 14%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background-color: #14bb1d;
-    border-radius: 10px;
-}
-
-.statusStatuspeca {
-    width: 14%;
-    height: 80%;
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background-color: #e0dd2c;
-    border-radius: 10px;
-}
-
-.statusStatusstrasado {
-    width: 14%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fff;
-    background-color: #d41919;
-    border-radius: 10px;
-}
-/*Fim - status de serviços em andamentos*/
 /*Botão*/
 .botaoeditarstaus {
   height: 100%;

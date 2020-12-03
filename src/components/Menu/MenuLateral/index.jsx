@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function MenuLateral() {
   return (
-    <aside>
+   
       <ul>
         <nav className="menuLateral">
           <Link className="link" to="/cadastroClientes">
@@ -19,9 +19,6 @@ function MenuLateral() {
             Veículos
           </Link>
           <Link className="link" to="/login">
-            Produtos
-          </Link>
-          <Link className="link" to="/login">
             Relatório
           </Link>
           <Link className="link" to="/login">
@@ -29,7 +26,7 @@ function MenuLateral() {
           </Link>
         </nav>
       </ul>
-    </aside>
+    
   );
 }
 

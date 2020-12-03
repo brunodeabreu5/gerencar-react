@@ -1,4 +1,5 @@
 /*Menu lateral*/
+
 .menuLateral {
   background-color: rgb(16, 29, 66);
   width: 250px;
@@ -10,7 +11,7 @@
 .link {
   display: flex;
   justify-content: center;
-  padding: 34px;
+  padding: 29px;
   font-family: "arial";
   font-size: 20pt;
   transition: all 0.2s linear;
@@ -23,7 +24,5 @@
 .link:hover {
   background-color: #cccc33;
 }
-
-
 
 /*fim do menu lateral*/
