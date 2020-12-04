@@ -1,24 +1,26 @@
-.fundoFrame {
-  
-  display: flex;
+.row{
   justify-content: center;
 }
-.frame {
-  width: 470px;
-  height: 637px;
-  background-color: #2982b6;
-  display: flex;
-  border-radius: 5px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-h1 {
-  font-family: "Anton", sans-serif;
-  color: #000000;
-  font-size: 60px;
-  letter-spacing: 5px;
-  font-weight: bolder;
-}
 
+.form-simple .font-small {
+  font-size: 0.8rem; }
 
+.form-simple .header {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem; }
+
+.form-simple input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ff3547;
+  -webkit-box-shadow: 0 1px 0 0 #ff3547;
+  box-shadow: 0 1px 0 0 #ff3547; }
+
+.form-simple input[type=text]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
+
+.form-simple input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #ff3547;
+  -webkit-box-shadow: 0 1px 0 0 #ff3547;
+  box-shadow: 0 1px 0 0 #ff3547; }
+
+.form-simple input[type=password]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
