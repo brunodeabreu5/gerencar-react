@@ -8,7 +8,7 @@ function Status(props) {
   return (
     <section>
       <div className="item">{props.texto}</div>
-      <Notifica></Notifica>
+      <Notifica/>
     </section>
   );
 }

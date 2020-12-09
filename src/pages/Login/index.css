@@ -1,26 +1,42 @@
-.row{
-  justify-content: center;
+
+
+.login {
+  font-weight: 400;
+  border: 0;
+  padding: 3%;
+  box-shadow: 0 2px 5px 0 rgba(255, 253, 253, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
 }
 
-.form-simple .font-small {
-  font-size: 0.8rem; }
+.telaLogin {
+  background-color: rgb(39, 39, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
 
-.form-simple .header {
-  border-top-left-radius: .3rem;
-  border-top-right-radius: .3rem; }
+.textLogoLogin {
+  background-color: #fff;
+}
 
-.form-simple input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #ff3547;
-  -webkit-box-shadow: 0 1px 0 0 #ff3547;
-  box-shadow: 0 1px 0 0 #ff3547; }
+.tamanhoLogin {
+  width: 400px;
+  background-color: #fff;
+}
 
-.form-simple input[type=text]:focus:not([readonly]) + label {
-  color: #4f4f4f; }
+.logoLogin {
+  width: 45%;
+}
+.textLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-.form-simple input[type=password]:focus:not([readonly]) {
-  border-bottom: 1px solid #ff3547;
-  -webkit-box-shadow: 0 1px 0 0 #ff3547;
-  box-shadow: 0 1px 0 0 #ff3547; }
-
-.form-simple input[type=password]:focus:not([readonly]) + label {
-  color: #4f4f4f; }
+.textLogo {
+  font-size: 65px;
+  font-weight: bold;
+  background-color: #fff;
+}
