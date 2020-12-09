@@ -8,9 +8,10 @@ function Landingpage() {
   return (
     <>
     <div>
-    <header class="cabezera"> <img class="logo" src="logo.png" alt="logo"/></header>
+    <header class="arriba"> <img class="cab" src="logo.png" alt="logo"/></header>
     </div>
-    <section> <Landingp/> <Formulario/></section>
+    <section class="seccion"> <Landingp/> <Formulario/></section>
+    <footer class="foot"></footer>
     </>
   );
 }
