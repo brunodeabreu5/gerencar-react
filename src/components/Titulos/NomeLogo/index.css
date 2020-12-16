@@ -1,17 +1,26 @@
 .logoBranca {
   height: 90%;
-  width: 27%;
+  width: 50%;
 }
 .logoIndex {
-  width: 250px;
+  width: 190px;
+  
   padding: 4px;
 }
 .botaoInicial {
   display: flex;
+  height: 100%;
+  width: 100%;
   align-items: stretch;
   font-size: 25px;
   justify-content: center;
   align-items: center;
+
   text-decoration: none;
   color: #fff;
+}
+.nomeHome{
+  display: flex;
+  justify-content: center;
+  font-size:30pt;
 }

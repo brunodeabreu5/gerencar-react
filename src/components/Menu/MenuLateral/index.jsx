@@ -11,7 +11,7 @@ function MenuLateral() {
       <ul>
         <nav className="menuLateral">
           <Link  className="link" to="/cadastroClientes">
-          <BsFillAlarmFill size="30"/>
+          
             Clientes
           </Link>
           <Link  className="link" to="/login">

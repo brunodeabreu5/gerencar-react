@@ -34,7 +34,7 @@
   display: flex;
   justify-content: center;
   height: 75%;
-  width: 90%;
+  width: 95%;
   margin: 1px;
   background-color: #fff;
   border: 2px solid #222;
@@ -63,7 +63,7 @@
 }
 
 .datacliente {
-  width: 15%;
+  width: 20%;
   border: 1px solid black;
   padding: 4px;
   background-color: rgba(143, 136, 136, 0.568);
@@ -71,7 +71,6 @@
 
 .dataTelefone {
   width: 20%;
-
   border: 1px solid black;
   padding: 4px;
   background-color: rgba(143, 136, 136, 0.568);
@@ -79,7 +78,6 @@
 
 .dataVeiculos {
   width: 20%;
-
   border: 1px solid black;
   padding: 4px;
   background-color: rgba(143, 136, 136, 0.568);

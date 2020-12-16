@@ -8,7 +8,7 @@ function CadastraUsuario() {
     <>
       <div className="cadastroNome">
         <Link>
-          <img src={Usuario} alt="cadastra" />
+          <img className="addUsuario" src={Usuario} alt="cadastra" />
         </Link>
       </div>
       ;
