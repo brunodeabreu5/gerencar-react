@@ -45,9 +45,7 @@
 
 .mecanico{
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 30%;
-    height: 30%;
-    margin: -1000px 0px 0 40px;
+    width: 500px;
+    height: 200px;
+    margin: -1500px 0px 0 30px;
 }

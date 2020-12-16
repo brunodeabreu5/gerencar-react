@@ -2,8 +2,13 @@
   margin: 0;
   padding: 0;
 }
+.seccion{
+  background-color: black;
+  height: 750px;
+}
 
-.cabezera{
+
+.arriba{
   background-color: rgba(255, 0, 0, 0.79);
   border: 1px solid #eebb55;
   width: 1363px;
@@ -11,10 +16,9 @@
   overflow: hidden;
 }
 
-.logo {
-  margin: -9px 0px 0 400px;
+.cab {
+  margin: -9px 0px 0 300px;
+  width: 400px;
 }
 
-.fondo {
-  background-color: black;
-}
+
