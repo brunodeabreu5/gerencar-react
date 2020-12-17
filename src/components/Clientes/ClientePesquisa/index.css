@@ -1,0 +1,4 @@
+.formDiv{
+    display: flex;
+    flex-direction: column;
+}
