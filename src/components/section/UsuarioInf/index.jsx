@@ -1,30 +1,36 @@
 import React from "react";
 import "./index.css";
 import MenuPesquisa from "../../Button/MenuPesquisa";
-import clientePesquisa from "../../Clientes/ClientePesquisa";
+import ClientePesquisa from "../../Clientes/ClientePesquisa";
 import CadastraUsuario from "../../Button/CadastraUsuario";
+//material-ui
 import Paper from "@material-ui/core/Paper";
 import Table from "@material-ui/core/Table";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-import { TableBody } from "@material-ui/core";
 
 const barra = [
-  { id: "name", label: "Name", minWidth: 170 },
-  { id: "code", label: "code", minWidth: 100 },
+  { id: "id", label: "Id", minWidth: 50 },
+  { id: "Nome", label: "Nome", minWidth: 70 },
   {
-    id: "population",
-    label: "Population",
-    minWidth: 170,
-    align: "right",
+    id: "endereco",
+    label: "Endereço",
+    minWidth: 50,
+    align: "left",
   },
   {
-    id: "size",
-    label: "Size",
-    minWidth: 170,
-    align: "right",
+    id: "email",
+    label: "Email",
+    minWidth: 50,
+    align: "left",
+  },
+  {
+    id: "telefone",
+    label: "Telefone",
+    minWidth: 70,
+    align: "left",
   },
 ];
 
@@ -50,9 +56,9 @@ function UsuarioInfo() {
         </div>
         <MenuPesquisa />
       </div>
-      <Paper style={{ root: "100%" }}>
+      <Paper>
         <TableContainer style={{ contain: 440 }}>
-          <Table stickyHeader aria-label="sticky table">
+          <Table>
             <TableHead>
               <TableRow>
                 {barra.map((column) => (
@@ -66,8 +72,7 @@ function UsuarioInfo() {
                 ))}
               </TableRow>
             </TableHead>
-            <TableBody>
-            </TableBody>
+            <ClientePesquisa></ClientePesquisa>
           </Table>
         </TableContainer>
       </Paper>
@@ -75,4 +80,5 @@ function UsuarioInfo() {
     </div>
   );
 }
+
 export default UsuarioInfo;

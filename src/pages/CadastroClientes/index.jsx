@@ -7,14 +7,13 @@ import BarraCima from "../../components/Header/BarraCima/index";
 import MenuLateral from "../../components/Menu/MenuLateral/index";
 import UsuarioInfo from "../../components/section/UsuarioInf/index";
 
-
 function CadastroCliente() {
   return (
     <div>
-      <BarraCima/>
+      <BarraCima />
       <div className="item1">
-      <MenuLateral/>
-      <UsuarioInfo/>
+        <MenuLateral />
+        <UsuarioInfo />
       </div>
     </div>
   );

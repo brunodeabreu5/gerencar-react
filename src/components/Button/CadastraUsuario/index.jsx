@@ -11,7 +11,7 @@ function CadastraUsuario() {
           <img className="addUsuario" src={Usuario} alt="cadastra" />
         </Link>
       </div>
-      ;
+      
     </>
   );
 }

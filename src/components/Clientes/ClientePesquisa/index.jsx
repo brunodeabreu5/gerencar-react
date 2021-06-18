@@ -1,39 +1,43 @@
 import React, { Component } from "react";
-//import {clientes} from "../../../clientes.json";
 import "../../section/UsuarioInf/index.css";
 import "./index.css";
+//material-ui
+import TableCell from "@material-ui/core/TableCell";
+import TableBody from "@material-ui/core/TableBody";
 
 //api
 import api from "../../../api";
-
-class clientePesquisa extends Component {
+import { TableRow } from "@material-ui/core";
+class ClientePesquisa extends Component {
   state = {
-    cliente: [],
+    clientes: [],
   };
 
   async componentDidMount() {
     const response = await api.get("cliente");
 
-    this.setState({ cliente: response.data });
+    console.log(response.data);
+
+    this.setState({ clientes: response.data });
   }
 
   render() {
-    const { cliente } = this.state;
+    const { clientes } = this.state;
 
-    {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => {
-      return (
-        <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-          {columns.map((column) => {
-            const value = row[column.id];
-            return (
-              <TableCell key={column.id} align={column.align}>
-                {column.format && typeof value === 'number' ? column.format(value) : value}
-              </TableCell>
-            );
-          })}
-        </TableRow>
-      );
-    })}
+    return (
+      <TableBody>
+        {clientes.map((cliente) => (
+          <TableRow key={cliente.idCliente}>
+            <TableCell align="left">{cliente.idCliente}</TableCell>
+            <TableCell align="left">{cliente.nome}</TableCell>
+            <TableCell align="left">{cliente.endereco}</TableCell>
+            <TableCell align="left">{cliente.email}</TableCell>
+            <TableCell align="left">{cliente.telefone}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    );
   }
 }
-export default clientePesquisa;
+
+export default ClientePesquisa;
