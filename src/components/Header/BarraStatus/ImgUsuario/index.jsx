@@ -11,7 +11,7 @@ function BarraStatus() {
     <di className="imagemUsuario">
       <img className="imagem" src={Usuario} alt="usuario" />
       <div className="textoStatus">
-        <p >Bruno De Abreu</p>
+        <p>Bruno De Abreu</p>
         <p>Mecanico</p>
         <button>Sair</button>
       </div>

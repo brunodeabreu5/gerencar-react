@@ -2,17 +2,18 @@
 
 .menuLateral ul {
   background-color: rgb(16, 29, 66);
-  width: 300px;
+  /*width: 300px;*/
   transition: all 0.2s linear;
   display: flex;
   margin-bottom: 20px;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
 
 .link {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   padding: 38px;
+  
   font-family: "arial";
   font-size: 20pt;
   transition: all 0.2s linear;

@@ -1,12 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* {
+ /* margin: 0;
+ /* padding: 0;
+}*/
 .Noti {
   display: flex;
-  
 }
-
+.root{
+  display: flex;
+  flex-wrap: wrap;
+}
 /*notificação do veiculo-- na pagina notifica*/
 .statusveiculos {
   height: 90px;

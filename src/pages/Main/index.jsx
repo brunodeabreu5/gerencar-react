@@ -7,14 +7,13 @@ import Status from "../../components/Notificacao/Status/index";
 
 function Main() {
   return (
-    <>
+    <div className="root">
       <BarraCima />
       <div className="Noti">
         <MenuLateral />
         <Status texto="Serviços em andamentos" />
-        
       </div>
-    </>
+    </div>
   );
 }
 export default Main;

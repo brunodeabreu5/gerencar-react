@@ -9,10 +9,10 @@ import BarraStatus from "../BarraStatus/ImgUsuario/index";
 
 function BarraCima() {
   return (
-    <header className="header-index">
+    <div className="header-index">
       <NomeLogo />
       <BarraStatus />
-    </header>
+    </div>
   );
 }
 export default BarraCima;

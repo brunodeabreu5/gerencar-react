@@ -1,5 +1,6 @@
 .header-index {
   display: flex;
-  background-color: rgb(16, 29, 66);
+  background-color: rgb(13, 120, 134);
+  flex-grow: 1;
   justify-content: space-between;
 }
