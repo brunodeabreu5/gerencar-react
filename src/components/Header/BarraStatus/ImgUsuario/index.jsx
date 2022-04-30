@@ -12,8 +12,7 @@ function BarraStatus() {
       <img className="imagem" src={Usuario} alt="usuario" />
       <div className="textoStatus">
         <p>Bruno De Abreu</p>
-        <p>Mecanico</p>
-        <button>Sair</button>
+        <div className="menuStatusSair"><p>Mecanico</p><button>Sair</button></div>
       </div>
     </di>
   );

@@ -10,7 +10,7 @@ function Main() {
     <div className="root">
       <BarraCima />
       <div className="Noti">
-        <MenuLateral />
+       
         <Status texto="Serviços em andamentos" />
       </div>
     </div>

@@ -1,30 +1,16 @@
 import React from "react";
 
+import { Link } from 'react-router-dom';
 import "./index.css";
-
-import { Link } from "react-router-dom";
 
 function MenuLateral() {
   return (
-    <ul>
-      <nav className="menuLateral">
-        <Link className="link" to="/cadastroClientes">
-          Clientes
-        </Link>
-        <Link className="link" to="/login">
-          Serviços
-        </Link>
-        <Link className="link" to="/login">
-          Veículos
-        </Link>
-        <Link className="link" to="/login">
-          Relatório
-        </Link>
-        <Link className="link" to="/login">
-          Estoque
-        </Link>
-      </nav>
-    </ul>
+    <nav className="navMenu">
+    <Link to="/cadastroClientes"><a>Clientes</a></Link>
+    <Link ><a>Blog</a></Link>
+    <Link><a >Work</a></Link>
+    <Link><a >About</a></Link>
+    </nav>
   );
 }
 
