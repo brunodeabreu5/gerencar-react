@@ -1,14 +1,15 @@
-/* {
- /* margin: 0;
- /* padding: 0;
-}*/
+
 .Noti {
-  /*display: flex;*/
+  display: flex;
   
 }
 .root{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  background-color:rgba(88, 86, 88, 0.4);
+  flex-direction: column;
+  align-content: stretch;
 }
 /*notificação do veiculo-- na pagina notifica*/
 .statusveiculos {

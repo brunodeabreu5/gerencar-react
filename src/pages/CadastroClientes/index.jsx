@@ -12,7 +12,7 @@ function CadastroCliente() {
     <div>
       <BarraCima />
       <div className="item1">
-        <MenuLateral />
+       
         <UsuarioInfo />
       </div>
     </div>
