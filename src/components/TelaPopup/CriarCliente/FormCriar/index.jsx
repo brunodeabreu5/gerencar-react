@@ -1,52 +1,61 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, Component } from 'react'
 import { Button, Form } from 'reactstrap'
 import './index.css'
+import api from "../../../../api";
+import { responsiveFontSizes } from '@material-ui/core';
 
-function FormCriar() {
+class FormCriar extends Component{
+  constructor(props) {
+    super(props);
 
-  const [datos, setDatos] = useState({
-    nome: '',
-    endereco: '',
-    email: '',
-    telefone: ''
-  })
+    this.state = {
+        nome: '',
+        endereco: '',
+        email: '',
+        telefone: ''
+    };
+}
+changeHandler = (e) =>{
+  this.setState({[e.target.name]:e.target.value})
+}
 
-  const handleInputChange = event => {
-    console.log(event.target.name)
-    setDatos({
-      ...datos,
-      [event.target.name]: event.target.value
+submitHandler = e => {
+  e.preventDefault()
+  console.log(this.state)
+  api.post('http://localhost:8080/cliente',this.state)
+    .then(response =>{
+      console.log(response)
     })
-  }
+    .catch(error => {
+      console.log(error)
+    })
+}
 
-  const enviarDatos = event => {
-    event.preventDefault()
-    console.log('enviando dados... '+ datos.name+' '+datos.endereco+' '+datos.email+' '+datos.telefone)
-  }
-
+render()  {
+  const {nome, endereco, email, telefone} = this.state
   return (
     <div className="tela">
-      <Fragment>
       <Button close />
       <h1>Cadastro de Cliente</h1>
-      <Form onSubmit={enviarDatos} className="formBox">
+      <Form onSubmit={this.submitHandler} className="formBox">
         <div className="formClinte">
           Nome: 
           <input
             type="text"
             placeholder="nome"
-            onChange={handleInputChange}
-            name="name"
+            onChange={this.changeHandler}
+            name="nome"
+            value={nome}
           ></input>
         </div>
-
         <div className="formClinte">
         Endereco:  
           <input
             type="text"
             placeholder="Endereco"
-            onChange={handleInputChange}
+            onChange={this.changeHandler}
             name="endereco"
+            value={endereco}
           ></input>
         </div>
         <div className="formClinte">
@@ -54,8 +63,9 @@ function FormCriar() {
           <input
             type="email"
             placeholder="email"
-            onChange={handleInputChange}
+            onChange={this.changeHandler}
             name="email"
+            value={email}
           ></input>
           </div>
           <div className="formClinte">
@@ -63,14 +73,15 @@ function FormCriar() {
             <input
               type="tel"
               placeholder="telefone"
-              onChange={handleInputChange}
+              onChange={this.changeHandler}
               name="telefone"
+              value={telefone}
             ></input>
           </div>
           <button type="submit" className="buttonEnviar">SALVAR</button>
       </Form>
-      </Fragment>
     </div>
   )
+}
 }
 export default FormCriar
