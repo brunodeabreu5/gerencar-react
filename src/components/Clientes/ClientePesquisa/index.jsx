@@ -1,43 +1,57 @@
-import React, { Component } from "react";
-import "../../section/UsuarioInf/index.css";
-import "./index.css";
+import React, { Component } from 'react'
+import '../../section/UsuarioInf/index.css'
+import './index.css'
 //material-ui
-import TableCell from "@material-ui/core/TableCell";
-import TableBody from "@material-ui/core/TableBody";
+import TableCell from '@material-ui/core/TableCell'
+import TableBody from '@material-ui/core/TableBody'
 
 //api
-import api from "../../../api";
-import { TableRow } from "@material-ui/core";
+import api from '../../../api'
+import { TableRow } from '@material-ui/core'
+import Button from '@material-ui/core/Button'
+import { ThemeProvider } from 'react-bootstrap'
+import EdtCliente from './../../TelaPopup/EdtCliente'
+
 class ClientePesquisa extends Component {
   state = {
-    clientes: [],
-  };
+    clientes: []
+  }
 
   async componentDidMount() {
-    const response = await api.get("cliente");
+    const response = await api.get('cliente')
 
-    console.log(response.data);
+    console.log(response.data)
 
-    this.setState({ clientes: response.data });
+    this.setState({ clientes: response.data })
   }
 
   render() {
-    const { clientes } = this.state;
+    const { clientes } = this.state
 
     return (
       <TableBody>
-        {clientes.map((cliente) => (
+        {clientes.map(cliente => (
           <TableRow key={cliente.idCliente}>
             <TableCell align="left">{cliente.idCliente}</TableCell>
             <TableCell align="left">{cliente.nome}</TableCell>
             <TableCell align="left">{cliente.endereco}</TableCell>
             <TableCell align="left">{cliente.email}</TableCell>
             <TableCell align="left">{cliente.telefone}</TableCell>
+            <ThemeProvider>
+              <TableCell align="left">
+                <EdtCliente />
+              </TableCell>
+              <TableCell align="left">
+                <Button variant="contained" color="secondary">
+                  Delete
+                </Button>
+              </TableCell>
+            </ThemeProvider>
           </TableRow>
         ))}
       </TableBody>
-    );
+    )
   }
 }
 
-export default ClientePesquisa;
+export default ClientePesquisa

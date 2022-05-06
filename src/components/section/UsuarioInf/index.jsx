@@ -11,28 +11,29 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
+
 const barra = [
-  { id: "id", label: "Id", minWidth: 50 },
-  { id: "Nome", label: "Nome", minWidth: 70 },
+  { id: 'id', label: 'Id', minWidth: 50 },
+  { id: 'Nome', label: 'Nome', minWidth: 70 },
   {
-    id: "endereco",
-    label: "Endereço",
+    id: 'endereco',
+    label: 'Endereço',
     minWidth: 50,
-    align: "left",
+    align: 'left'
   },
   {
-    id: "email",
-    label: "Email",
+    id: 'email',
+    label: 'Email',
     minWidth: 50,
-    align: "left",
+    align: 'left'
   },
   {
-    id: "telefone",
-    label: "Telefone",
+    id: 'telefone',
+    label: 'Telefone',
     minWidth: 70,
-    align: "left",
-  },
-];
+    align: 'left'
+  }
+]
 
 function UsuarioInfo() {
   return (
@@ -61,24 +62,26 @@ function UsuarioInfo() {
           <Table>
             <TableHead>
               <TableRow>
-                {barra.map((column) => (
-                  <TableCell
-                    key={column.id}
-                    align={column.align}
-                    style={{ minWidth: column.minWidth }}
-                  >
-                    {column.label}
-                  </TableCell>
+                {barra.map(column => (
+                  <>
+                    <TableCell
+                      key={column.id}
+                      align={column.align}
+                      style={{ minWidth: column.minWidth }}
+                    >
+                      {column.label}
+                    </TableCell>
+                  </>
                 ))}
               </TableRow>
             </TableHead>
-            <ClientePesquisa></ClientePesquisa>
+            <ClientePesquisa />
           </Table>
         </TableContainer>
       </Paper>
       <CadastraUsuario />
     </div>
-  );
+  )
 }
 
 export default UsuarioInfo;

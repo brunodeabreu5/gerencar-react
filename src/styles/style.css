@@ -1,21 +1,31 @@
-/* {
- /* margin: 0;
- /* padding: 0;
-}*/
 .Noti {
-  display: flex;
-}
-.root{
   display: flex;
   flex-wrap: wrap;
 }
+
+
+.root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*background-color: rgba(182, 177, 182, 0.4);*/
+  flex-direction: column;
+  align-content: stretch;
+}
 /*notificação do veiculo-- na pagina notifica*/
+
 .statusveiculos {
   height: 90px;
   font-size: 15pt;
   display: flex;
   border-top: 2px solid rgba(122, 121, 122, 0.4);
   align-items: center;
+}
+
+html, body ,*{
+margin: 0;
+padding: 0;
+/*height: 100%;*/
 }
 
 .statusid {
