@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+

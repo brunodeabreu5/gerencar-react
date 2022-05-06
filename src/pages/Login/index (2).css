@@ -1,0 +1,42 @@
+
+
+.login {
+  font-weight: 400;
+  border: 0;
+  padding: 3%;
+  box-shadow: 0 2px 5px 0 rgba(255, 253, 253, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+
+.telaLogin {
+  background-color: rgb(39, 39, 38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.textLogoLogin {
+  background-color: #fff;
+}
+
+.tamanhoLogin {
+  width: 400px;
+  background-color: #fff;
+}
+
+.logoLogin {
+  width: 45%;
+}
+.textLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textLogo {
+  font-size: 65px;
+  font-weight: bold;
+  background-color: #fff;
+}

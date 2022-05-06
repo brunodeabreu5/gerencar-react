@@ -1,0 +1,58 @@
+.item-status {
+    overflow: auto ;
+    height: 453px;
+    
+  }
+  .statusservicos {
+    height: 40px;
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+  }
+  
+  .servicosid {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .servicosStatus {
+    width: 14%;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .servicosfuncionario {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .servicosPlaca {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .servicosEntrada {
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    align-self: center;
+  }
+  
+
+/*Botão*/
+.botaoeditarstaus {
+  height: 100%;
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}

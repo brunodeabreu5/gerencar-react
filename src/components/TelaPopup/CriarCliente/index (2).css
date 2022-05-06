@@ -1,0 +1,17 @@
+
+
+.adicionarUsuario {
+  height: 150%;
+  width: 150%;
+  position: absolute;
+
+}
+
+.addUsuario{
+  width: 100%;
+}
+
+.formAdd{
+  position:absolute;
+  background-color: black;
+}

@@ -1402,7 +1402,11 @@
     "recompose" "0.28.0 - 0.30.0"
     "warning" "^4.0.1"
 
+<<<<<<< HEAD
 "@material-ui/core@^4.0.0", "@material-ui/core@^4.12.4":
+=======
+"@material-ui/core@^4.12.4":
+>>>>>>> 52111d2e0eb15a620e25bb51a192f371c1fe3baa
   "integrity" "sha512-tr7xekNlM9LjA6pagJmL8QCgZXaubWUwkJnoYcMKd4gw/t4XiyvnTkjdGrUVicyB2BsdaAv1tvow45bPM4sSwQ=="
   "resolved" "https://registry.npmjs.org/@material-ui/core/-/core-4.12.4.tgz"
   "version" "4.12.4"
@@ -1420,6 +1424,7 @@
     "react-is" "^16.8.0 || ^17.0.0"
     "react-transition-group" "^4.4.0"
 
+<<<<<<< HEAD
 "@material-ui/icons@^4.11.3":
   "integrity" "sha512-IKHlyx6LDh8n19vzwH5RtHIOHl9Tu90aAAxcbWME6kp4dmvODM3UvOHJeMIDzUbd4muuJKHmlNoBN+mDY4XkBA=="
   "resolved" "https://registry.npmjs.org/@material-ui/icons/-/icons-4.11.3.tgz"
@@ -1427,6 +1432,8 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
+=======
+>>>>>>> 52111d2e0eb15a620e25bb51a192f371c1fe3baa
 "@material-ui/styles@^4.11.5":
   "integrity" "sha512-o/41ot5JJiUsIETME9wVLAJrmIWL3j0R0Bj2kCOLbSfqEkKf0fmaPt+5vtblUh5eXr2S+J/8J3DaCb10+CzPGA=="
   "resolved" "https://registry.npmjs.org/@material-ui/styles/-/styles-4.11.5.tgz"

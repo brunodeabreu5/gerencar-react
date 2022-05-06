@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nome": "Pedro da Silva",
+      "cpf": "611.276.890-96",
+      "data": "20/04/2020",
+      "telefone": "(45)99324-5234",
+      "veiculos": "2 veiculos"
+    }
+  ]
+}

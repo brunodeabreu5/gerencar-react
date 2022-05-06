@@ -1,0 +1,51 @@
+.titulo{
+    width: 525px;
+    height: 150px;
+    overflow: hidden;
+    font-family: "Arvo", serif;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-style: bold;
+    margin: 10px 0px 0 50px;
+}
+
+.fuente{
+    width: 381px;
+    height: 44px;
+    overflow: hidden;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: -40px 0px 0 150px;
+}
+
+.icono{
+    margin: 0px 0px 0 -30px;
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+
+.informacion{
+    width: 696px;
+    height: 325px;
+    overflow: hidden;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.mecanico{
+    background-attachment: fixed;
+    width: 500px;
+    height: 200px;
+    margin: -1500px 0px 0 30px;
+}

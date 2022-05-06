@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.seccion{
+  background-color: black;
+  height: 750px;
+}
+
+
+.arriba{
+  background-color: rgba(255, 0, 0, 0.79);
+  border: 1px solid #eebb55;
+  width: 1363px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.cab {
+  margin: -9px 0px 0 300px;
+  width: 400px;
+}
+
+
