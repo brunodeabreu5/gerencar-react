@@ -10,11 +10,11 @@ function EdtCliente() {
     <>
       <Popup
         trigger={
-          <Link to={{ pathname: `${cliente.id}` }}>
-            <Button variant="contained" color="primary">
-              Editar
-            </Button>
-          </Link>
+          /* <Link to={{ pathname: `${cliente.id}` }}>*/
+          <Button variant="contained" color="primary">
+            Editar
+          </Button>
+          /*</Link>*/
         }
         modal
       >

@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-.Noti {
-  display: flex;
-=======
 
 .Noti {
   display: flex;
-  
-}
-.root{
-  display: flex;
-  justify-content: center;
->>>>>>> 52111d2e0eb15a620e25bb51a192f371c1fe3baa
-  flex-wrap: wrap;
-  background-color:rgba(88, 86, 88, 0.4);
-  flex-direction: column;
-  align-content: stretch;
-}
 
-
+}
 .root {
   display: flex;
   justify-content: center;

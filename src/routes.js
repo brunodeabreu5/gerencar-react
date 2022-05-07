@@ -19,7 +19,7 @@ function routes() {
         <Route path="/" component={login} />
         <Route path="/" component={login} />
         <Route path="/" component={login} />
-        <Route element={<EdtCliente />} path="/edit/:id" />
+
       </Switch>
     </BrowserRouter>
   )

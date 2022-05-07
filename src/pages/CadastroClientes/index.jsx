@@ -11,10 +11,6 @@ function CadastroCliente() {
     <div>
       <BarraCima />
       <div className="item1">
-<<<<<<< HEAD
-=======
-       
->>>>>>> 52111d2e0eb15a620e25bb51a192f371c1fe3baa
         <UsuarioInfo />
       </div>
     </div>
