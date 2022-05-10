@@ -4,12 +4,12 @@ import './index.css'
 
 import adicionarUsuario from '../../../Assets/icons/adicionarUsuario.png'
 import Modal from 'react-modal'
-
+import { useNavigate } from 'router-dom'
 import { Button, Form } from 'reactstrap'
-import './index.css'
 import api from '../../../api'
 
 function CriarCliente() {
+  const history = useNavigate()
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -21,7 +21,28 @@ function CriarCliente() {
     telefone: ''
   })
 
-  const handleSubmit = event => {}
+  function submit(e) {
+    e.preventDefault()
+    api
+      .post('cliente', {
+        nome: data.nome,
+        endereco: data.endereco,
+        email: data.email,
+        telefone: data.telefone
+      })
+      .then(response => {
+        console.log(response.data)
+        history('/')
+      })
+  }
+
+  function handle(e) {
+    const newdata = { ...data }
+    newdata[e.target.id] = e.target.value
+    setData(newdata)
+
+    console.log(newdata)
+  }
 
   return (
     <>
@@ -32,15 +53,15 @@ function CriarCliente() {
         <div className="tela">
           <Button close onClick={handleClose} />
           <h1>Cadastro de Cliente</h1>
-          <Form onSubmit={this.submitHandler} className="formBox">
+          <Form onSubmit={e => submit(e)} className="formBox">
             <div className="formClinte">
               Nome:
               <input
                 type="text"
                 placeholder="nome"
-                onChange={data.nome}
+                onChange={e => handle(e)}
                 name="nome"
-                value={nome}
+                value={data.nome}
               ></input>
             </div>
             <div className="formClinte">
@@ -48,9 +69,9 @@ function CriarCliente() {
               <input
                 type="text"
                 placeholder="Endereco"
-                onChange={data.endereco}
+                onChange={e => handle(e)}
                 name="endereco"
-                value={endereco}
+                value={data.endereco}
               ></input>
             </div>
             <div className="formClinte">
@@ -58,9 +79,9 @@ function CriarCliente() {
               <input
                 type="email"
                 placeholder="email"
-                onChange={data.email}
+                onChange={e => handle(e)}
                 name="email"
-                value={email}
+                value={data.email}
               ></input>
             </div>
             <div className="formClinte">
@@ -68,16 +89,12 @@ function CriarCliente() {
               <input
                 type="tel"
                 placeholder="telefone"
-                onChange={data.telefone}
+                onChange={e => handle(e)}
                 name="telefone"
-                value={telefone}
+                value={data.telefone}
               ></input>
             </div>
-            <button
-              type="submit"
-              className="buttonEnviar"
-              onClick={createCliente}
-            >
+            <button type="submit" className="buttonEnviar">
               SALVAR
             </button>
           </Form>
