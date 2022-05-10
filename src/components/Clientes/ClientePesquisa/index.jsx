@@ -10,7 +10,7 @@ import api from '../../../api'
 import { TableRow } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 import { ThemeProvider } from 'react-bootstrap'
-import EdtCliente from './../../TelaPopup/EdtCliente'
+import EdtCliente from './../../TelaPopup/EdtCliente/index'
 
 class ClientePesquisa extends Component {
   state = {

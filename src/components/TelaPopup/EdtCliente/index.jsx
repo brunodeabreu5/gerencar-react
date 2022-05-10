@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 import Button from '@material-ui/core/Button'
-import { ThemeProvider } from 'react-bootstrap'
 
-/*import Modal from '@material-ui/core/Modal'*/
 import Modal from 'react-modal'
-
+import '../../TelaPopup/TelaStatus/index.css'
 import { Form } from 'reactstrap'
-import '../CriarCliente/FormCriar/index.css'
 import api from './../../../api'
+import '../../TelaPopup/CriarCliente/index.css'
 
 const customStyles = {
   content: {
@@ -17,7 +15,9 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
+    padding: '3%',
+    width: '50%'
   }
 }
 
@@ -63,7 +63,7 @@ function EdtCliente(props) {
         <div className="tela">
           <h1>Editar Cliente</h1>
           <Form onSubmit={submit} className="formBox">
-            <div className="formClinte">
+            <div className="formCliente">
               Id:
               <input
                 type="text"
@@ -74,7 +74,7 @@ function EdtCliente(props) {
                 value={props.id}
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Nome:
               <input
                 type="text"
@@ -85,7 +85,7 @@ function EdtCliente(props) {
                 id="nome"
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Endereco:
               <input
                 type="text"
@@ -96,7 +96,7 @@ function EdtCliente(props) {
                 placeholder="endereco"
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Email:
               <input
                 type="text"
@@ -107,7 +107,7 @@ function EdtCliente(props) {
                 placeholder="email"
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Telefone:
               <input
                 type="tel"
@@ -118,15 +118,17 @@ function EdtCliente(props) {
                 placeholder="telefone"
               ></input>
             </div>
-            <Button
-              type="submit"
-              className="buttonEnviar"
-              onClick={handleClose}
-              variant="contained"
-              color="primary"
-            >
-              SALVAR
-            </Button>
+            <div className="buttonEditar">
+              <Button
+                type="submit"
+                className="buttonEnviar"
+                onClick={handleClose}
+                variant="contained"
+                color="primary"
+              >
+                Alterar
+              </Button>
+            </div>
           </Form>
         </div>
       </Modal>

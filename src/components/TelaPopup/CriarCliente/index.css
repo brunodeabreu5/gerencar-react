@@ -1,5 +1,3 @@
-
-
 .adicionarUsuario {
   height: 150%;
   width: 150%;
@@ -14,4 +12,28 @@
 .formAdd{
   position:absolute;
   background-color: black;
+}
+
+.formBox{
+  
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formCliente{
+  padding: 3%;
+  justify-content: space-between;
+  display: flex;
+}
+input{
+  padding: 5px;
+  width: 70%;
+}
+.buttonSalvar{
+  display: flex;
+}
+
+.buttonEditar{
+display: flex;
+justify-content: center;
 }

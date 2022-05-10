@@ -1,8 +1,9 @@
 .tela {
-  width: 680px;
-  height: 570px;
+ display: flex;
+ flex-flow: column;
+ justify-content: space-between;
   background-color: #fff;
-  padding: 20px;
+  
 }
 
 .clik{
@@ -10,5 +11,5 @@
 }
 
 .close{
-  padding: 20px;
+  padding: 20%;
 }

@@ -1,15 +1,27 @@
-import React, { useState, Component } from 'react'
+import React, { useState } from 'react'
 
 import './index.css'
 
 import adicionarUsuario from '../../../Assets/icons/adicionarUsuario.png'
 import Modal from 'react-modal'
-import { useNavigate } from 'router-dom'
-import { Button, Form } from 'reactstrap'
-import api from '../../../api'
 
-function CriarCliente() {
-  const history = useNavigate()
+import { Form } from 'reactstrap'
+import api from '../../../api'
+import Button from '@material-ui/core/Button'
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '50%'
+  }
+}
+
+const CriarCliente = () => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
@@ -21,82 +33,96 @@ function CriarCliente() {
     telefone: ''
   })
 
-  function submit(e) {
-    e.preventDefault()
-    api
-      .post('cliente', {
-        nome: data.nome,
-        endereco: data.endereco,
-        email: data.email,
-        telefone: data.telefone
+  const handleSubmit = async () => {
+    try {
+      const response = await api({
+        method: 'post',
+        URL: '/cliente',
+        data: data
       })
-      .then(response => {
-        console.log(response.data)
-        history('/')
-      })
+    } catch (error) {
+      console.log(error)
+    }
   }
 
-  function handle(e) {
-    const newdata = { ...data }
-    newdata[e.target.id] = e.target.value
-    setData(newdata)
+  const handleChange = event => {
+    setData({
+      ...data,
+      [event.target.name]: event.target.value
+    })
+  }
 
-    console.log(newdata)
+  function submit(e) {
+    e.preventDefault()
+    api.post('/cliente', data).then(response => {
+      console.log(response.data)
+    })
   }
 
   return (
     <>
-      <button className="adicionarUsuario" onClick={handleOpen}>
+      <Button
+        className="adicionarUsuario"
+        onClick={handleOpen}
+        style={customStyles}
+      >
         <img className="addUsuario" src={adicionarUsuario} alt="Editar" />
-      </button>
-      <Modal isOpen={open} onRequestClose={handleClose}>
+      </Button>
+      <Modal isOpen={open} onRequestClose={handleClose} style={customStyles}>
         <div className="tela">
           <Button close onClick={handleClose} />
           <h1>Cadastro de Cliente</h1>
-          <Form onSubmit={e => submit(e)} className="formBox">
-            <div className="formClinte">
+          <Form onSubmit={handleSubmit} className="formBox">
+            <div className="formCliente">
               Nome:
               <input
                 type="text"
                 placeholder="nome"
-                onChange={e => handle(e)}
+                onChange={handleChange}
                 name="nome"
                 value={data.nome}
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Endereco:
               <input
                 type="text"
                 placeholder="Endereco"
-                onChange={e => handle(e)}
+                onChange={handleChange}
                 name="endereco"
                 value={data.endereco}
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Email:
               <input
                 type="email"
                 placeholder="email"
-                onChange={e => handle(e)}
+                onChange={handleChange}
                 name="email"
                 value={data.email}
               ></input>
             </div>
-            <div className="formClinte">
+            <div className="formCliente">
               Telefone:
               <input
                 type="tel"
                 placeholder="telefone"
-                onChange={e => handle(e)}
+                onChange={handleChange}
                 name="telefone"
                 value={data.telefone}
               ></input>
             </div>
-            <button type="submit" className="buttonEnviar">
-              SALVAR
-            </button>
+            <div className="buttonEditar">
+              <Button
+                type="submit"
+                className="buttonEnviar"
+                variant="contained"
+                color="primary"
+              >
+                SALVAR
+              </Button>
+            </div>
           </Form>
         </div>
       </Modal>
