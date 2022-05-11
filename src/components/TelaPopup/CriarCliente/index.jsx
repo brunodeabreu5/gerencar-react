@@ -33,18 +33,6 @@ const CriarCliente = () => {
     telefone: ''
   })
 
-  const handleSubmit = async () => {
-    try {
-      const response = await api({
-        method: 'post',
-        URL: '/cliente',
-        data: data
-      })
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
   const handleChange = event => {
     setData({
       ...data,
@@ -56,9 +44,10 @@ const CriarCliente = () => {
     e.preventDefault()
     api.post('/cliente', data).then(response => {
       console.log(response.data)
+      handleClose()
+      window.location.reload()
     })
   }
-
   return (
     <>
       <Button
@@ -72,7 +61,7 @@ const CriarCliente = () => {
         <div className="tela">
           <Button close onClick={handleClose} />
           <h1>Cadastro de Cliente</h1>
-          <Form onSubmit={handleSubmit} className="formBox">
+          <Form onSubmit={submit} className="formBox">
             <div className="formCliente">
               Nome:
               <input

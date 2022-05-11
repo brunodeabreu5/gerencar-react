@@ -79,7 +79,6 @@ function UsuarioInfo() {
           </Table>
         </TableContainer>
       </Paper>
-
       <CadastraUsuario />
     </div>
   )

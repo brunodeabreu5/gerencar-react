@@ -33,12 +33,6 @@ function EdtCliente(props) {
     telefone: ''
   })
 
-  function submit() {
-    api.put(`cliente/${props.id}`, data).then(response => {
-      console.log(response.data)
-    })
-  }
-
   const getData = async () => {
     const response = await api.get(`/cliente/${props.id}`)
     setData(response.data)
@@ -46,12 +40,22 @@ function EdtCliente(props) {
     return response.data
   }
 
+  const handle = event => {
+    setData({
+      ...data,
+      [event.target.name]: event.target.value
+    })
+  }
+
   useEffect(() => {
     getData()
   }, [])
 
-  function handle({ target: { name, value } }) {
-    setData({ ...data, [name]: value })
+  function submit() {
+    api.put(`cliente/${props.id}`, data).then(response => {
+      console.log(response.data)
+      handleClose()
+    })
   }
 
   return (
@@ -122,7 +126,6 @@ function EdtCliente(props) {
               <Button
                 type="submit"
                 className="buttonEnviar"
-                onClick={handleClose}
                 variant="contained"
                 color="primary"
               >
