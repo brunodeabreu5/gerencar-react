@@ -10,9 +10,8 @@ function NomeLogo() {
     <div className="logoIndex">
       <Link to="/main" className="botaoInicial">
         <img className="logoBranca" src={Logo} alt="logo" />
-        
       </Link>
     </div>
-  );
+  )
 }
 export default NomeLogo;

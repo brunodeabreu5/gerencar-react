@@ -57,7 +57,6 @@ function EdtCliente(props) {
       handleClose()
     })
   }
-
   return (
     <>
       <Button variant="contained" color="primary" onClick={handleOpen}>

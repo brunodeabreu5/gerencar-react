@@ -1,19 +1,7 @@
 /*botão de pesquisa da pagina */
 
-.botaopesquisa {
-    padding: 10px;
-    font-family: "arial";
-    font-size: 20pt;
-    color: #434343;
-    border-radius: 15px;
-    border-bottom: 1px solid black;
-    background-color: rgb(137, 210, 220);
-    margin-left: 40px;
-    text-decoration: none;
-  }
-  
   .menuPesquisabotao {
-    margin-top: 10px;
+   
   }
   
   /*/////////////////////////////////////////*/

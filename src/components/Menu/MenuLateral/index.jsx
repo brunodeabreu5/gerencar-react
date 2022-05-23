@@ -9,8 +9,8 @@ function MenuLateral() {
       <Link to="/cadastroClientes">
         <a>Clientes</a>
       </Link>
-      <Link>
-        <a>Serviço</a>
+      <Link to="/cadastroVeiculos">
+        <a>Veiculos</a>
       </Link>
       <Link>
         <a>Estoque</a>

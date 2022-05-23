@@ -50,11 +50,7 @@ const CriarCliente = () => {
   }
   return (
     <>
-      <Button
-        className="adicionarUsuario"
-        onClick={handleOpen}
-        style={customStyles}
-      >
+      <Button onClick={handleOpen} style={customStyles}>
         <img className="addUsuario" src={adicionarUsuario} alt="Editar" />
       </Button>
       <Modal isOpen={open} onRequestClose={handleClose} style={customStyles}>

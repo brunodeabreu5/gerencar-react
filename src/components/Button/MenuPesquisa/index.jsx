@@ -1,13 +1,15 @@
 import React from "react";
 import "./index.css";
-import { Link } from "react-router-dom";
+import { Button } from '@material-ui/core'
 
 function MenuPesquisa() {
   return (
     <div className="menuPesquisabotao">
-      <Link className="botaopesquisa">Pesquisar</Link>
+      <Button variant="contained" color="primary">
+        Pesquisar
+      </Button>
     </div>
-  );
+  )
 }
 
 export default MenuPesquisa;

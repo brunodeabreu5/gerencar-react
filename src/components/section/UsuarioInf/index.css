@@ -8,11 +8,12 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+  justify-content: center;
+   margin-top: 20px;
+ 
 }
-
 .menuPesquisabotao {
-  display: flex;
-  justify-content: flex-start;
+ margin-top:30px;
 }
 
 .menuPesquisa {
@@ -100,12 +101,6 @@
 
 .opcao1 {
   width: 150px;
-  padding: 6px;
   border: 1 solid black;
 }
 
-.itemform {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: row;
-}
