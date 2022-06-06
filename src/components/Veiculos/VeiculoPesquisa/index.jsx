@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import '../../section/UsuarioInf/index.css'
-import './index.css'
+//import '../../section/UsuarioInf/index.css'
+//import './index.css'
 //material-ui
 import TableCell from '@material-ui/core/TableCell'
 import TableBody from '@material-ui/core/TableBody'
@@ -10,47 +10,46 @@ import api from '../../../api'
 import { TableRow } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 import { ThemeProvider } from 'react-bootstrap'
-import EdtCliente from './../../TelaPopup/EdtCliente/index'
+// import EdtCliente from './../../TelaPopup/EdtCliente/index'
 
-
-class ClientePesquisa extends Component {
+class VeiculoPesquisa extends Component {
   state = {
-    clientes: []
+    veiculos: []
   }
 
   componentDidMount() {
-    api.get(`/cliente`).then(res => {
-      const clientes = res.data
-      this.setState({ clientes })
+    api.get(`/veiculo`).then(res => {
+      const veiculos = res.data
+      this.setState({ veiculos })
     })
   }
 
-  deleteCliente(idCliente, e) {
-    api.delete(`/cliente/${idCliente}`).then(res => {
+  deleteCliente(idVeiculos, e) {
+    api.delete(`/veiculo/${idVeiculos}`).then(res => {
       console.log(res)
       console.log(res.data)
-      const clientes = this.state.clientes.filter(
-        item => item.idCliente !== idCliente
+      const veiculos = this.state.veiculos.filter(
+        item => item.idVeiculos !== idVeiculos
       )
-      this.setState({ clientes })
+      this.setState({ veiculos })
     })
   }
 
   render() {
-    const { clientes } = this.state
+    const { veiculos } = this.state
     return (
       <TableBody>
-        {clientes.map(cliente => (
-          <TableRow key={cliente.idCliente}>
-            <TableCell align="left">{cliente.idCliente}</TableCell>
-            <TableCell align="left">{cliente.nome}</TableCell>
-            <TableCell align="left">{cliente.endereco}</TableCell>
-            <TableCell align="left">{cliente.email}</TableCell>
-            <TableCell align="left">{cliente.telefone}</TableCell>
-            <tableCell align="center"></tableCell>
+        {veiculos.map(veiculo => (
+          <TableRow key={veiculo.idVeiculos}>
+            <TableCell align="left">{veiculo.idVeiculo}</TableCell>
+            <TableCell align="left">{veiculo.marca}</TableCell>
+            <TableCell align="left">{veiculo.modelo}</TableCell>
+            <TableCell align="left">{veiculo.ano}</TableCell>
+            <TableCell align="left">{veiculo.placaDoVeiculo}</TableCell>
+            <TableCell align="left">{veiculo.odometro}</TableCell>
             <ThemeProvider>
               <TableCell align="left">
-                <EdtCliente
+                {/* <EdtCliente 
                   id={cliente.idCliente}
                   nome={cliente.nome}
                   endereco={cliente.endereco}
@@ -65,7 +64,7 @@ class ClientePesquisa extends Component {
                   onClick={e => this.deleteCliente(cliente.idCliente, e)}
                 >
                   Delete
-                </Button>
+                </Button>*/}
               </TableCell>
             </ThemeProvider>
           </TableRow>
@@ -75,4 +74,4 @@ class ClientePesquisa extends Component {
   }
 }
 
-export default ClientePesquisa
+export default VeiculoPesquisa

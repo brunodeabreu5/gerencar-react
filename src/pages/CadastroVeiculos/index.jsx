@@ -4,7 +4,7 @@ import '../../styles/style.css'
 //import './index.css'
 //componentes
 import BarraCima from '../../components/Header/BarraCima/index'
-import UsuarioInfo from '../../components/section/UsuarioInf/index'
+import UsuarioInfo from '../../components/section/VeiculoInfo/index'
 
 function CadastroVeiculos() {
   return (
